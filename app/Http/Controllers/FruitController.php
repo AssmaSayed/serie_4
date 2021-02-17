@@ -12,4 +12,9 @@ class FruitController extends Controller
 
         return view('page.fruit', compact('fruit'));
     }
+    public function show($id){
+
+        $show = Fruit::find($id);
+        return view('page.showFruit', compact('show'));
+        }
 };

@@ -19,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WelcomeController::class, 'index'])->name('home');
 Route::get('/legume', [LegumeController::class, 'index'])->name('legume');
 Route::get('/fruit', [FruitController::class, 'index'])->name('fruit');
+
+Route::get('/fruit-show/{id}', [FruitController::class, 'show']);
+Route::get('/legume-show/{id}', [FruitController::class, 'show']);
+

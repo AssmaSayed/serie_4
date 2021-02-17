@@ -11,6 +11,9 @@
                     <div class="box">
                         <span>{{ $item->quantité }}</span>
                     </div>
+                    <div>
+                        <a class="btn btn-primary" href="/fruit-show/{{$item->id}}">SHOW</a>
+                    </div>
                 </div>
                 @if ($loop->iteration % 3 == 0)
         </div>
